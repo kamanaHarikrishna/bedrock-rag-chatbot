@@ -1,20 +1,36 @@
-# Bedrock RAG Chatbot (AWS)
+# 🚀 AWS Bedrock RAG Chatbot (No Code Demo)
 
-This project demonstrates how to build a Retrieval-Augmented Generation (RAG) chatbot using:
+This repository contains documentation and resources for building a **Retrieval-Augmented Generation (RAG)** chatbot using **Amazon Bedrock**, **Lex**, and **S3**, without writing any custom code.
 
-- 🧠 Amazon Bedrock (Claude 3.5 Sonnet v2)
-- 🗂️ Knowledge Base + Titan Embeddings
-- ☁️ Amazon S3 for documents
-- 💬 Amazon Lex for chatbot
+## 📁 Contents
+- `docs/` – Contains sample travel policy documents used in the chatbot
+- `README.md` – Setup instructions and explanation
 
+## 🛠️ What It Does
+This chatbot allows users to ask questions about travel policies using their own documents stored in S3. It uses:
+- **Amazon Bedrock Knowledge Base** (with Titan Text Embeddings)
+- **Amazon Lex** for the chatbot interface
+- **Amazon S3** to store and retrieve documents
 
-## Setup
-1. Upload policy documents to S3
-2. Create a Knowledge Base with Titan Embeddings
-3. Configure Lex bot and Q&A intent
-4. Deploy and test
+## 🧩 Technologies Used
+- Amazon S3
+- Amazon Bedrock
+- Claude 3.5 Sonnet v2
+- Titan Embeddings v2
+- Amazon Lex
 
-## Folder Structure
-- `docs/` - Sample travel policy PDFs
-- `code/` - (Optional) Lambda, Python, or frontend code
-- `README.md` - Project overview
+## 📚 How to Recreate It
+1. Upload your policy documents to an S3 bucket
+2. In Amazon Bedrock:
+   - Create a knowledge base
+   - Choose Titan Text Embeddings v2
+   - Use Quick Create for vector store
+3. Sync documents and test Q&A
+4. Create a Lex bot and link it to the knowledge base
+
+## 🗑️ Clean Up
+- Delete the knowledge base, vector store, and S3 bucket to avoid charges
+
+## 📌 Notes
+- You must use an IAM user (not root)
+- Set up a valid payment method in AWS

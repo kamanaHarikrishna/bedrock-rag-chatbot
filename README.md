@@ -6,7 +6,7 @@ This project demonstrates how to build a Retrieval-Augmented Generation (RAG) ch
 - 🗂️ Knowledge Base + Titan Embeddings
 - ☁️ Amazon S3 for documents
 - 💬 Amazon Lex for chatbot
-- 🌐 Optional: Streamlit or web UI integration
+
 
 ## Setup
 1. Upload policy documents to S3
